@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: peniel-bot-proxy
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ZAPI_INSTANCE
+        value: 3F87058E92E8725FE909E25B2C234100
+      - key: ZAPI_TOKEN
+        value: 70E0D276047D162D196DA2535
+      - key: ZAPI_BASE
+        value: https://api2.z-api.io
